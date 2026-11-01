@@ -1275,7 +1275,8 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "time": "2026-09-28T14:56:25+00:00"
+            "time": "2026-09-28T14:56:25+00:00",
+            "published-time": "2026-10-06T14:15:25+00:00"
         },
         {
             "name": "laravel/framework",
@@ -9947,5 +9948,5 @@
         "php": "^8.3"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
