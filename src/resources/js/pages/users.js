@@ -47,6 +47,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ==========================================
+    // TENANT FIELD: SHOW / HIDE BASED ON ROLE
+    // ==========================================
+    const roleSelect = document.getElementById('role');
+    const tenantField = document.getElementById('tenantField');
+    const tenantSelect = document.getElementById('tenant_id');
+
+    if (roleSelect && tenantField && tenantSelect) {
+
+        function toggleTenantField() {
+            const selectedRole = roleSelect.value;
+
+            const requiresTenant = [
+                'tenant',
+                'tenant_employee'
+            ].includes(selectedRole);
+
+            tenantField.classList.toggle('d-none', !requiresTenant);
+
+            tenantSelect.required = requiresTenant;
+
+            if (!requiresTenant) {
+                tenantSelect.value = '';
+            }
+        }
+
+        roleSelect.addEventListener('change', toggleTenantField);
+
+        // Jalankan saat halaman pertama kali dibuka
+        toggleTenantField();
+    }
+
+    // ==========================================
     // LIVE SEARCH, FILTER & PAGINATION
     // POST REQUEST - NO SENSITIVE DATA IN URL
     // ==========================================

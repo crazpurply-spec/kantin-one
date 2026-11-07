@@ -6,7 +6,7 @@
     <main class="dashboard-main">
         @include('partials.navbar')
         <div class="dashboard-content">
-            <div class="card border-0 shadow-sm mb-4">
+            <div class="card border-0 shadow mb-4">
                 <div class="card-body d-flex justify-content-between align-items-center">
                     {{-- Page Information --}}
                     <div class="d-flex flex-column">

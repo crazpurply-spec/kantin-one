@@ -55,3 +55,11 @@ jobs:
           set -euo pipefail
           cd /opt/kantin-one
           docker compose exec -T kantin-one php artisan optimize:clear
+
+      - name: Build frontend assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /opt/kantin-one/src
+          npm ci
+          npm run build

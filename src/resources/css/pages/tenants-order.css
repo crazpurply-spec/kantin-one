@@ -1,0 +1,330 @@
+/* TENANT PAGE */
+
+.tenant-heading {
+    margin-bottom: 25px;
+}
+
+.tenant-heading h1 {
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 800;
+    color: #172554;
+}
+
+.tenant-heading h1 span {
+    color: #6366f1;
+}
+
+.tenant-heading p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* CART */
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 14px;
+    border: 1px solid #e8edf5;
+    border-radius: 12px;
+    background: white;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #6366f1;
+    color: white;
+}
+
+/* SERVICE */
+
+.selected-service {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 16px;
+    margin-bottom: 22px;
+    background: #eef2ff;
+    border-radius: 13px;
+}
+
+.selected-service-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #6366f1;
+    border-radius: 10px;
+}
+
+.selected-service small {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.selected-service h6 {
+    margin: 3px 0 0;
+    font-size: 13px;
+    font-weight: 750;
+    color: #172554;
+}
+
+.selected-service a {
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6366f1;
+    text-decoration: none;
+}
+
+/* SEARCH */
+
+.tenant-search {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.tenant-search i {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.tenant-search input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 1px solid #e8edf5;
+    border-radius: 12px;
+    outline: none;
+    font-size: 13px;
+}
+
+.tenant-search input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,.1);
+}
+
+/* CATEGORY */
+
+.tenant-categories {
+    display: flex;
+    gap: 9px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    flex-shrink: 0;
+    padding: 9px 16px;
+    border: 1px solid #e8edf5;
+    border-radius: 30px;
+    background: white;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.category-btn.active {
+    background: #6366f1;
+    border-color: #6366f1;
+    color: white;
+}
+
+/* LIST HEADING */
+
+.tenant-list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.tenant-list-heading h4 {
+    color: #172554;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.tenant-list-heading p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.tenant-list-heading > span {
+    color: #64748b;
+    font-size: 11px;
+}
+
+/* TENANT GRID */
+
+.tenant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.tenant-card {
+    overflow: hidden;
+    background: white;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    transition: .2s ease;
+}
+
+.tenant-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15,23,42,.07);
+}
+
+.tenant-image {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.tenant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tenant-open,
+.tenant-closed {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 10px;
+    border-radius: 30px;
+    background: white;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.tenant-open {
+    color: #16a34a;
+}
+
+.tenant-closed {
+    color: #dc2626;
+}
+
+.tenant-open i,
+.tenant-closed i {
+    font-size: 7px;
+    margin-right: 3px;
+}
+
+/* TENANT BODY */
+
+.tenant-card-body {
+    padding: 16px;
+}
+
+.tenant-category {
+    color: #6366f1;
+    font-size: 10px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.tenant-card-body h5 {
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.tenant-card-body > p {
+    min-height: 38px;
+    margin-bottom: 17px;
+    color: #94a3b8;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+.tenant-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.tenant-card-footer > span {
+    color: #64748b;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.tenant-menu-btn {
+    border: none;
+    background: transparent;
+    color: #6366f1;
+    font-size: 11px;
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.tenant-menu-btn:disabled {
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* EMPTY */
+
+.tenant-empty {
+    padding: 55px 20px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.tenant-empty > i {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.tenant-empty h5 {
+    color: #334155;
+    font-weight: 750;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 575px) {
+    .tenant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tenant-image {
+        height: 180px;
+    }
+
+    .tenant-heading h1 {
+        font-size: 30px;
+    }
+
+    .tenant-list-heading > span {
+        display: none;
+    }
+}

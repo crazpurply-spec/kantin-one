@@ -1,0 +1,508 @@
+.order-status-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding-bottom: 50px;
+}
+
+.order-status-header {
+    height: 75px;
+    padding: 0 7%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #252525;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.status-brand .brand-icon {
+    width: 38px;
+    height: 38px;
+    background: #198754;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+}
+
+.brand-highlight {
+    color: #198754;
+}
+
+.header-label {
+    color: #777;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header-label i {
+    color: #198754;
+    margin-right: 5px;
+}
+
+.order-status-container {
+    width: min(900px, 92%);
+    margin: 35px auto;
+}
+
+.status-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.status-page-heading h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.status-page-heading p {
+    color: #888;
+    font-size: 13px;
+    margin: 0;
+}
+
+.btn-refresh-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid #198754;
+    border-radius: 9px;
+    background: #fff;
+    color: #198754;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-refresh-status:hover {
+    background: #198754;
+    color: #fff;
+}
+
+.main-order-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 23px;
+    margin-bottom: 30px;
+}
+
+.main-order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.main-order-label {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.main-order-top > div > strong {
+    color: #198754;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main-order-badge {
+    background: #fff3cd;
+    color: #997404;
+    border-radius: 30px;
+    padding: 7px 12px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.main-order-badge.is-success {
+    background: #d1e7dd;
+    color: #146c43;
+}
+
+.main-order-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 22px 0;
+}
+
+.main-order-information > div {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    column-gap: 9px;
+}
+
+.main-order-information > div > i {
+    grid-row: span 2;
+    color: #198754;
+    margin-top: 3px;
+}
+
+.main-order-information span {
+    color: #888;
+    font-size: 11px;
+}
+
+.main-order-information strong {
+    color: #333;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.main-order-total {
+    border-top: 1px dashed #ddd;
+    padding-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-order-total span {
+    color: #777;
+    font-size: 13px;
+}
+
+.main-order-total strong {
+    color: #198754;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.tracking-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.tracking-section-heading h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.tracking-section-heading p {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+}
+
+.tracking-section-heading > i {
+    color: #198754;
+    font-size: 21px;
+}
+
+.tenant-tracking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tracking-tenant-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tracking-tenant-header {
+    padding: 18px 20px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.tracking-tenant-name {
+    font-size: 15px;
+    font-weight: 800;
+    color: #333;
+}
+
+.tracking-tenant-number {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.tracking-status-badge {
+    background: #fff3cd;
+    color: #997404;
+    padding: 7px 11px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.tracking-status-badge.is-success {
+    background: #d1e7dd;
+    color: #146c43;
+}
+
+.tracking-tenant-body {
+    padding: 20px;
+}
+
+.tracking-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-step {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline-step::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -50%;
+    width: 100%;
+    height: 3px;
+    background: #e9ecef;
+    z-index: -1;
+}
+
+.timeline-step:first-child::before {
+    display: none;
+}
+
+.timeline-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.timeline-step.completed .timeline-icon,
+.timeline-step.active .timeline-icon {
+    background: #198754;
+    color: #fff;
+}
+
+.timeline-step.completed::before,
+.timeline-step.active::before {
+    background: #198754;
+}
+
+.timeline-step span {
+    font-size: 10px;
+    color: #999;
+    line-height: 1.4;
+}
+
+.timeline-step.completed span,
+.timeline-step.active span {
+    color: #198754;
+    font-weight: 700;
+}
+
+.tracking-product-heading {
+    font-size: 12px;
+    font-weight: 800;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.tracking-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tracking-product-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.tracking-product-item span {
+    color: #777;
+}
+
+.tracking-product-item strong {
+    color: #333;
+    white-space: nowrap;
+}
+
+.tracking-subtotal {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #ddd;
+    padding-top: 13px;
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.tracking-subtotal strong {
+    color: #198754;
+}
+
+.tracking-pickup-code {
+    margin-top: 18px;
+    padding: 15px;
+    background: #f0f8f3;
+    border: 1px dashed #198754;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tracking-pickup-code span {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.tracking-pickup-code strong {
+    color: #198754;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.tracking-pickup-code small {
+    display: block;
+    color: #888;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.status-page-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-status-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 24px;
+    background: #198754;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.btn-status-home:hover {
+    background: #146c43;
+    color: #fff;
+}
+
+.status-empty {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #888;
+}
+
+.status-empty i {
+    font-size: 35px;
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+.status-empty h3 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+@media (max-width: 576px) {
+    .order-status-header {
+        padding: 0 5%;
+    }
+
+    .status-brand {
+        font-size: 19px;
+    }
+
+    .order-status-container {
+        margin-top: 22px;
+    }
+
+    .status-page-heading h1 {
+        font-size: 21px;
+    }
+
+    .status-page-heading p {
+        font-size: 11px;
+    }
+
+    .main-order-card {
+        padding: 17px;
+    }
+
+    .main-order-information {
+        gap: 17px 10px;
+    }
+
+    .main-order-top > div > strong {
+        font-size: 16px;
+    }
+
+    .main-order-badge {
+        font-size: 9px;
+    }
+
+    .tracking-tenant-header,
+    .tracking-tenant-body {
+        padding: 15px;
+    }
+
+    .timeline-step span {
+        font-size: 9px;
+    }
+
+    .timeline-icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    .tracking-pickup-code strong {
+        font-size: 21px;
+    }
+}

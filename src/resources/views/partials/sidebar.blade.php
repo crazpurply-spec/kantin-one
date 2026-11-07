@@ -2,18 +2,12 @@
     $role = auth()->user()->role ?? '';
 
     $menus = match ($role) {
-        'administrator' => [
+        'super_admin', 'administrator' => [
             [
-                'label' => 'Dashboard',
+                'label' => 'Beranda',
                 'icon' => 'fa-solid fa-house',
                 'url' => '/dashboard',
                 'active' => ['dashboard'],
-            ],
-            [
-                'label' => 'Aplikasi Pemesanan Kantin',
-                'icon' => 'fa-solid fa-users',
-                'url' => route('orders.index'),
-                'active' => ['orders*'],
             ],
             [
                 'label' => 'Manajemen Pengguna',
@@ -24,8 +18,32 @@
             [
                 'label' => 'Manajemen Tenant',
                 'icon' => 'fa-solid fa-store',
-                'url' => '#',
+                'url' => route('tenants.index'),
                 'active' => ['tenants*'],
+            ],
+            [
+                'label' => 'Manajemen Produk',
+                'icon' => 'fa-solid fa-users',
+                'url' => route('products.index'),
+                'active' => ['products*'],
+            ],
+            [
+                'label' => 'Aplikasi Pemesanan Pelanggan',
+                'icon' => 'fa-solid fa-users',
+                'url' => '#',
+                'active' => ['orders.customer*'],
+            ],
+            [
+                'label' => 'Aplikasi Monitoring Pesanan',
+                'icon' => 'fa-solid fa-users',
+                'url' => '#',
+                'active' => ['orders.customer*'],
+            ],
+            [
+                'label' => 'Aplikasi Verifikasi Pesanan',
+                'icon' => 'fa-solid fa-users',
+                'url' => '#',
+                'active' => ['orders.customer*'],
             ],
             [
                 'label' => 'Laporan',
@@ -136,7 +154,7 @@
         </div>
         <div class="sidebar-user-info">
             <strong>{{ auth()->user()->name }}</strong>
-            <small>{{ $role }}</small>
+            <small>{{ ucwords(str_replace('_', ' ', $role)) }}</small>
         </div>
     </div>
     <div class="sidebar-menu-label">MENU UTAMA</div>
